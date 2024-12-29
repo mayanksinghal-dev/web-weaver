@@ -13,4 +13,4 @@ export const personalData = {
   resume: ""
 }
 
-export const HERO_CONTENT = `I am a fullstack engineer who loves to craft beautiful products on web. i'm currently working as a Advance application ananlyst at Accenture, where i handle Client Projects and create responsive Web apps. Other than That I love being outside, cracking stupid jokes, Obsess over new things every two week.`;
+export const HERO_CONTENT = `I am a fullstack engineer who loves to craft beautiful products on web. i'm currently working as a Advance application ananlyst at Accenture, where i handle Client Projects and create responsive Web apps. Other than That I love being outside, cracking stupid jokes, obsess over new things every two week.`;

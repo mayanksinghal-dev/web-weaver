@@ -37,7 +37,7 @@ const HeroSection = ({contactRef}) => {
                                 <RiContactsFill size={16} />
                             </button>
                         </div>
-                        <Link href={'#resume'}
+                        <Link href={''}
                             role="button"
                             target="_blank"
                             className="flex items-center gap-1 hover:gap-3 bg-gradient-to-r from-pink-500 to-violet-600 rounded-full px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-in-out  hover:text-white hover:no-underline md:font-semibold">
