@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { ToastContainer } from "react-toastify";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
-// import "./css/card.scss";
+import "./css/card.scss";
 import "./css/globals.scss";
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,9 +23,9 @@ export default function RootLayout({
                 <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem]">
 
                 {/* <ToastContainer /> */}
-
       <Navbar/>
         {children}
+        <Footer/>
         </main>
 
       </body>

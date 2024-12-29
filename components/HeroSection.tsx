@@ -1,9 +1,23 @@
+import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
+import { ForwardedRef, useRef } from "react";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 
-export default function HeroSection() {
+// Define the type for the ref passed to HeroSection
+interface ContactRef {
+    scrollToContact: (options?: { behavior?: ScrollBehavior; block?: ScrollLogicalPosition }) => void;
+  }
+
+const HeroSection = ({contactRef}:{contactRef:any}) => {
+    // const contactRef = useRef<ContactRef>(null); // Use the correct type for the ref
+  
+    const scrollToContact = () => {
+      if (contactRef.current) {
+        contactRef.current.scrollToContact({ behavior: 'smooth', block: 'start' });
+      }
+    };
     return (
         <section className="relative flex flex-col items-center justify-between py-4 lg:py-12 ">
             <Image
@@ -18,18 +32,18 @@ export default function HeroSection() {
                     <h1 className="text-3xl font-bold leading-10 md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
                         Hello, <br />
                         This is {' '}
-                        <span className=" text-pink-500">Mayank singhal</span>,<br/>
+                        <span className=" text-[#ca95f0]">{personalData.name}</span>,<br/>
                         {`I'm a `}
-                        <span className=" text-[#d946ef]">Professional web developer{'.'}</span>                     
+                        <span className=" text-[#8c1aff]">{personalData.designation}{'.'}</span>                     
                     </h1>
 
                     <div className="flex items-center gap-3 mt-6">
-                        <Link href={'#contact'} className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
+                        <div onClick={scrollToContact} className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
                             <button className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-outtext-[#ffff]">
                                 <span>Contact Me</span>
                                 <RiContactsFill size={16} />
                             </button>
-                        </Link>
+                        </div>
                         <Link href={'#resume'}
                             role="button"
                             target="_blank"
@@ -137,3 +151,5 @@ export default function HeroSection() {
         </section>
     )
 }
+
+export default HeroSection;
