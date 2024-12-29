@@ -1,18 +1,10 @@
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
-import { ForwardedRef, useRef } from "react";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 
-// Define the type for the ref passed to HeroSection
-interface ContactRef {
-    scrollToContact: (options?: { behavior?: ScrollBehavior; block?: ScrollLogicalPosition }) => void;
-  }
-
-const HeroSection = ({contactRef}:{contactRef:any}) => {
-    // const contactRef = useRef<ContactRef>(null); // Use the correct type for the ref
-  
+const HeroSection = ({contactRef}) => { 
     const scrollToContact = () => {
       if (contactRef.current) {
         contactRef.current.scrollToContact({ behavior: 'smooth', block: 'start' });

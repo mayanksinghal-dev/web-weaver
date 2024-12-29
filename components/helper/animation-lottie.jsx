@@ -6,8 +6,8 @@ import dynamic from "next/dynamic";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
-const AnimationLottie = ({ animationPath }:{animationPath: any}) => {
-  const defaultOptions: LottieComponentProps = {
+const AnimationLottie = ({ animationPath }) => {
+  const defaultOptions = {
     loop: true,
     autoplay: true,
     animationData: animationPath,
