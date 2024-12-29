@@ -10,7 +10,7 @@ export const personalData = {
   linkedIn: "https://linkedin.com/in/mayank-singhal-41b26816b",
   leetcode: "https://leetcode.com/u/mayank_singhal_leetcode/",
   devUsername: "said7388",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  resume: ""
 }
 
-export const HERO_CONTENT = `I am a fullstack engineer who loves to craft beautiful products on web. i'm currently working as a Advance application ananlyst at Accenture, where i handle Client Projects and create responsive Web apps. Other than That I love being outside, cracking stupid jokes, Obsess over new things every two week, Currently, i'm exploring AI / LLMs, framer-motion and Three JS`;
+export const HERO_CONTENT = `I am a fullstack engineer who loves to craft beautiful products on web. i'm currently working as a Advance application ananlyst at Accenture, where i handle Client Projects and create responsive Web apps. Other than That I love being outside, cracking stupid jokes, Obsess over new things every two week.`;
