@@ -9,7 +9,7 @@ import ContactForm from "./contact-form";
 import { forwardRef, useImperativeHandle, useRef } from "react";
 
 const ContactSection = forwardRef((_, ref) => {
-  const contactRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef(null);
 
   // Expose the scrollToContact method to the parent
   useImperativeHandle(ref, () => ({
