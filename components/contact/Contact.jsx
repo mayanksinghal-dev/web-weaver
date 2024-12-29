@@ -8,17 +8,12 @@ import { MdAlternateEmail } from "react-icons/md";
 import ContactForm from "./contact-form";
 import { forwardRef, useImperativeHandle, useRef } from "react";
 
-interface ScrollOptions {
-  behavior?: ScrollBehavior;
-  block?: ScrollLogicalPosition;
-}
-
 const ContactSection = forwardRef((_, ref) => {
   const contactRef = useRef<HTMLDivElement>(null);
 
   // Expose the scrollToContact method to the parent
   useImperativeHandle(ref, () => ({
-    scrollToContact: (options: ScrollOptions = { behavior: 'smooth', block: 'start' }) => {
+    scrollToContact: (options = { behavior: 'smooth', block: 'start' }) => {
       if (contactRef.current) {
         contactRef?.current?.scrollIntoView(options);
       }
@@ -26,7 +21,6 @@ const ContactSection = forwardRef((_, ref) => {
   }));
     return (
       <div
-        id="contact"
         ref={contactRef}
         className="my-12 lg:my-16 relative mt-24 text-white"
       >
