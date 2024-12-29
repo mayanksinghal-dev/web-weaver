@@ -1,18 +1,8 @@
-//service id  - service_qmy8u0j
 
-// emailjs.send("service_qmy8u0j","template_f8q6nzg",{
-//   from_name: "Mayank Test",
-//   to_name: "Mayank Singhal",
-//   message: "Hello world test",
-//   to_email: "mayanksinghal.dev@gmail.com",
-//   from_email: "mayanksinghal6768@gmail.com",
-//   });
-"use client";
 // @flow strict
 import { isValidEmail } from "@/utils/check-email";
 import { useState } from "react";
 import { TbMailForward } from "react-icons/tb";
-import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 
 function ContactForm() {
@@ -23,14 +13,6 @@ function ContactForm() {
     email: "",
     message: "",
   });
-
-  // const checkRequired = () => {
-
-
-  //   if (userInput.email && userInput.message && userInput.name) {
-  //     setError({ ...error, required: false });
-  //   }
-  // };
 
   const handleSendMail = async (e) => {
     e.preventDefault();
@@ -44,8 +26,6 @@ function ContactForm() {
     }else {
       setError({ email:false, required: false });
     }
-
-    try {
       setIsLoading(true);
       emailjs
         .send(
@@ -55,17 +35,16 @@ function ContactForm() {
             from_name: userInput.name,
             to_name: "Mayank Singhal",
             message: userInput.message,
-            to_email: "mayanksinghal.dev@gmail.com",
+            to_email:  "mayanksinghal.dev@gmail.com",
             from_email: userInput.email,
             my_message: "Thankyou for contacting me, I'll reach out to you ASAP.",
           },
-          "OHMnbJO-EVi_6j9oB"
-          // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEy
+          "OHMnbJO-EVi_6j9oB",
         )
         .then(
           () => {
             setIsLoading(false);
-            toast.success("Message sent successfully!");
+            alert('Thank you. I will get back to you as soon as possible.');
             setUserInput({
               name: "",
               email: "",
@@ -74,14 +53,10 @@ function ContactForm() {
           },
           (error) => {
             setIsLoading(false);
-            toast.error(error?.response?.data?.message);
+            console.log(error)
+            alert('Ahh, something went wrong. Please try again.');
           }
         );
-    } catch (error) {
-      toast.error(error?.response?.data?.message);
-    } finally {
-      setIsLoading(false);
-    }
   };
 
   return (
