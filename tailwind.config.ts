@@ -30,6 +30,9 @@ module.exports = {
       fontFamily: {
         alexBrush: ["Alex Brush"],
       },
+      maxWidth: {
+        'vw': '100vw', 
+      }
     },
   },
   plugins: [],
