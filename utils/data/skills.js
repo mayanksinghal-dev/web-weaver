@@ -15,7 +15,9 @@ export const skillsData = [
   'Figma',
   'Oracle',
   'NodeJs',
-  'Nestjs'
+  'Nestjs',
+  'Java',
+  'SpringBoot'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

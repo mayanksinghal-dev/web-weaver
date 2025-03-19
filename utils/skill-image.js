@@ -75,10 +75,13 @@ import wordpress from '../assets/svg/skills/wordpress.svg';
 import oracle from '../assets/svg/skills/oracle.svg'
 import nodejs from '../assets/svg/skills/nodejs.svg'
 import nestjs from '../assets/svg/skills/nestjs.svg'
+import springboot from '../assets/svg/skills/spring-boot.svg'
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
+    case 'springboot':
+      return springboot;
     case 'nestjs':
       return nestjs;
     case 'nodejs':
