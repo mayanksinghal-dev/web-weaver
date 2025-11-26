@@ -9,6 +9,6 @@ export const personalData = {
   github: "https://github.com/mayanksinghal-dev",
   linkedIn: "https://linkedin.com/in/mayank-singhal-41b26816b",
   leetcode: "https://leetcode.com/u/mayank_singhal_leetcode/",
-  resume: ""
+  resume: "assets\Mayank Singhal.pdf"
 }
 
