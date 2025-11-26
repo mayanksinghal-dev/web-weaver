@@ -1,16 +1,14 @@
 export const personalData = {
   name: "Mayank Singhal",
   profile: '/profile.png',
-  designation: "Software Developer",
-  description: "My name is ABU SAID. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
+  designation: "Senior Software Developer",
+  description : "Results-oriented Full stack Engineer with 3 years of experience delivering scalable full-stack solutions, secure APIs, and distributed microservices for enterprise applications. Proven expertise in Java, Spring Boot, Kafka, Redis, and ReactJS with strong grounding in Agile, DevOps and AWS practices. Recognized with Accenture’s Skills Star Award for driving innovation, boosting developer productivity, and leading high-impact system designs under tight deadlines. Adept at requirement analysis, system architecture, and end-to-end delivery from concept to production.",
   email: 'mayanksinghal.dev@gmail.com',
   phone: '+91 7986197130',
   address: 'Gurgaon, Harayana - 122015',
   github: "https://github.com/mayanksinghal-dev",
   linkedIn: "https://linkedin.com/in/mayank-singhal-41b26816b",
   leetcode: "https://leetcode.com/u/mayank_singhal_leetcode/",
-  devUsername: "said7388",
   resume: ""
 }
 
-export const HERO_CONTENT = `I am a fullstack engineer who loves to craft beautiful products on web. I'm currently working as a Advance application analyst at Accenture, where i handle Client Projects and create responsive web apps. Other than That I love being outside, cracking stupid jokes, obsess over new things every two week.`;

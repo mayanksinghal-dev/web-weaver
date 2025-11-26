@@ -11,13 +11,6 @@ const HeroSection = ({contactRef}) => {
     };
     return (
         <section className="relative flex flex-col items-center justify-between py-4 lg:py-12 ">
-            {/* <Image
-                src='/hero.svg'
-                alt="hero"
-                width={1572}
-                height={795}
-                className="absolute -top-[98px] -z-10"
-            /> */}
             <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
                 <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10 text-white">
                     <h1 className="text-3xl font-bold leading-10 md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
@@ -28,7 +21,7 @@ const HeroSection = ({contactRef}) => {
                         <span className=" text-[#8c1aff]">{personalData.designation}{'.'}</span>                     
                     </h1>
                     <h6 className="py-4">
-                        {HERO_CONTENT}
+                        {personalData.description}
                     </h6>
                     <div className="flex items-center gap-3 mt-6">
                         <div onClick={scrollToContact} className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
@@ -75,21 +68,27 @@ const HeroSection = ({contactRef}) => {
                             <div className="ml-4 lg:ml-8 mr-2">
                                 <span className=" text-white">skills:</span>
                                 <span className="text-gray-400">{`['`}</span>
-                                <span className="text-amber-300">React</span>
+                                <span className="text-amber-300">Java</span>
                                 <span className="text-gray-400">{"', '"}</span>
-                                <span className="text-amber-300">NextJS</span>
+                                <span className="text-amber-300">Javascript</span>
                                 <span className="text-gray-400">{"', '"}</span>
-                                <span className="text-amber-300">Redux</span>
+                                <span className="text-amber-300">SpringBoot</span>
                                 <span className="text-gray-400">{"', '"}</span>
-                                <span className="text-amber-300">Express</span>
+                                <span className="text-amber-300">Nodejs</span>
                                 <span className="text-gray-400">{"', '"}</span>
-                                <span className="text-amber-300">NestJS</span>
+                                <span className="text-amber-300">Nestjs</span>
                                 <span className="text-gray-400">{"', '"}</span>
-                                <span className="text-amber-300">MySql</span>
+                                <span className="text-amber-300">ReactJS</span>
+                                <span className="text-gray-400">{"', '"}</span>
+                                <span className="text-amber-300">MySQL</span>
                                 <span className="text-gray-400">{"', '"}</span>
                                 <span className="text-amber-300">MongoDB</span>
                                 <span className="text-gray-400">{"', '"}</span>
                                 <span className="text-amber-300">Docker</span>
+                                <span className="text-gray-400">{"', '"}</span>
+                                <span className="text-amber-300">Kubernetes</span>
+                                <span className="text-gray-400">{"', '"}</span>
+                                <span className="text-amber-300">Git/Github</span>
                                 <span className="text-gray-400">{"', '"}</span>
                                 <span className="text-amber-300">AWS</span>
                                 <span className="text-gray-400">{"'],"}</span>
