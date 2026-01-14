@@ -13,7 +13,7 @@ const HeroSection = ({ contactRef }) => {
     }
   };
   function openAndDownload() {
-    const pdfUrl = "/Mayank Singhal.pdf";
+    const pdfUrl = "/Mayank_Singhal_Resume.pdf";
     window.open(pdfUrl, "_blank");
     const link = document.createElement("a");
     link.href = pdfUrl;
